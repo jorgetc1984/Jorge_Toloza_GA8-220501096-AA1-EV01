@@ -17,17 +17,18 @@ function PaginaRegistro() {
         });
     }, []);
 
+
     function registrar(usuario, password, campaña) {
-        const extensionesValidas = ['101', '102', '103'];
-        const claveValida = '123456';
-        const campañaValida = ['paneles']
+        const extensionesValidas = ['1000'];
+        const claveValida = '654321';
+        const campañaValida = ['Admin'];
 
         if (
             extensionesValidas.includes(usuario) &&
             password === claveValida &&
             campaña === campañaValida
         ) {
-            history.push('/index_1.html'); // Ruta relativa a la página 2
+            history.push('index_Amd.html'); // Ruta relativa a la página 2
             alert('Registro exitoso. ¡Bienvenido!');
         } else {
             alert('Error en el registro. Verifica los datos ingresados.');

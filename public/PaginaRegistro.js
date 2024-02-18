@@ -20,7 +20,7 @@ function PaginaRegistro() {
     function registrar(usuario, password, campaña) {
         const extensionesValidas = ['101', '102', '103'];
         const claveValida = '123456';
-        const campañaValida = 'paneles';
+        const campañaValida = ['paneles'];
 
         if (
             extensionesValidas.includes(usuario) &&
@@ -33,6 +33,7 @@ function PaginaRegistro() {
             alert('Error en el registro. Verifica los datos ingresados.');
         }
     }
+
 
     return (
         <div>

@@ -1,3 +1,5 @@
+
+
 -- Creación de la base de datos si no existe
 CREATE DATABASE IF NOT EXISTS Callbuc_Dial;
 
@@ -30,20 +32,6 @@ CREATE TABLE IF NOT EXISTS OpcionCalificacion (
   Descripcion VARCHAR(100)
 );
 
--- Insertar datos en la tabla OpcionCalificacion
-INSERT IGNORE INTO OpcionCalificacion (Descripcion) VALUES
-('Propietario de casa'),
-('Ingles'),
-('Fuera de cobertura'),
-('Cita caída'),
-('Cita hecha'),
-('No llamar más'),
-('Mayor de 70 años'),
-('Buzón'),
-('Llamar luego'),
-('No interesado'),
-('Ya tiene paneles');
-
 -- Creación de la tabla FormaEnvio
 CREATE TABLE IF NOT EXISTS FormaEnvio (
   ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -63,10 +51,11 @@ CREATE TABLE IF NOT EXISTS Cita (
 );
 
 -- Agregar usuario 101
-INSERT IGNORE INTO Usuario (Extension, Clave, Campaña) VALUES (101, '123456', 'Campaña1');
+INSERT INTO Usuario (Extension, Clave, Campaña) VALUES (101, '123456', 'Campaña1');
 
 -- Agregar usuario 102
-INSERT IGNORE INTO Usuario (Extension, Clave, Campaña) VALUES (102, '123456', 'Campaña2');
+INSERT INTO Usuario (Extension, Clave, Campaña) VALUES (102, '123456', 'Campaña2');
 
 -- Agregar usuario 103
-INSERT IGNORE INTO Usuario (Extension, Clave, Campaña) VALUES (103, '123456', 'Campaña3');
+INSERT INTO Usuario (Extension, Clave, Campaña) VALUES (103, '123456', 'Campaña3');
+

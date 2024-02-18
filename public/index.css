@@ -19,6 +19,7 @@ label {
   font-size: x-large
 }
 
+
 .tarjetas {
   display: flex;
   gap: 10px;

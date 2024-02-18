@@ -9,6 +9,14 @@ h1 {
   color: #333;
 }
 
+#estatus option[value="pausa"] {
+  background-color: rgb(19, 119, 233)
+}
+
+#estatus option[value="activo"] {
+  background-color: rgb(221, 6, 42)
+}
+
 #formulario {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -142,6 +150,7 @@ input[type="checkbox"] {
 .botones-contenedor {
   display: flex;
   justify-content: space-between;
+  background-color: #45a049;
   margin-top: 15px;
 }
 
@@ -152,6 +161,7 @@ input[type="checkbox"] {
 .botones-contenedor {
   display: flex;
   justify-content: space-between;
+  background-color: #45a049;
   margin-top: 20px;
 }
 
@@ -224,7 +234,8 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #242424;
+
 }
 
 #formulario {

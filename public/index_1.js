@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 class MarcadorPredictivo {
   constructor() {
     this.numeroActual = '';
@@ -44,6 +45,10 @@ function mostrarCajaTexto(caja) {
   if (cajaSeleccionada) {
     cajaSeleccionada.style.display = 'block';
   }
+}
+
+function goToRegistrationPage() {
+  window.location.href = "http://192.168.1.68:3000/";
 }
 
 function agregarNumero(numero) {
